@@ -1,13 +1,8 @@
-import { useState } from "react";
+import React from "react";
+import SearchCity from "./Components/Search/SearchCity";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <h1>Hello</h1>
-    </>
-  );
-}
+const App = () => {
+  return <SearchCity />;
+};
 
 export default App;

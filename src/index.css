@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.transition {
+    transition: all 1s ease;
+}
+
+h1,
+h2,
+h3,
+p {
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    letter-spacing: 0.05em;
+}
+
+small {
+    font-size: 14px;
+}
+
+.morning_bg {
+    background-image: url('./assets/morning-bg.jpg');
+    background-position: right 45% center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.night_bg {
+    background-image: url('./assets/city-morning.png');
+    background-position: right 45% center;
+    background-size: cover;
+    z-index: 1;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    --_c: no-repeat radial-gradient(farthest-side, #4400ff 92%, #0000);
+    background:
+        var(--_c) top,
+        var(--_c) left,
+        var(--_c) right,
+        var(--_c) bottom;
+    background-size: 12px 12px;
+    animation: l7 1s infinite;
+}
+
+@keyframes l7 {
+    to {
+        transform: rotate(.5turn)
+    }
+}
