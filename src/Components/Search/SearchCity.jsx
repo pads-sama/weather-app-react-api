@@ -226,17 +226,17 @@ const SearchCity = () => {
               </motion.div>
             </div>
           </div>
+          <div
+            className={`${
+              isLoading
+                ? "absolute inset-0 w-full h-screen flex bg-black/25 z-50 justify-center items-center"
+                : "hidden"
+            }`}
+          >
+            <div className={`${isLoading ? "flex" : "hidden"} loader`}></div>
+          </div>
         </>
       )}
-      {/* <div
-        className={`${
-          isLoading
-            ? "absolute inset-0 w-full h-screen flex bg-black/25 z-50 justify-center items-center"
-            : "hidden"
-        }`}
-      >
-        <div className={`${isLoading ? "flex" : "hidden"} loader`}></div>
-      </div> */}
       <div className=" bg-gradient-to-t from-[#0c0c1d] to-[#111134]/40 h-full w-full absolute inset-0 -z-[1]"></div>
     </div>
   );
